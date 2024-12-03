@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dara's Personal Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="portfolio">
+    <header class="portfolio__header">
+      <h1><a href="https://www.facebook.com/sandaraparktababan14/" target="_blank" style="font-family: papyrus;">DARA</a></h1>
+      <nav class="portfolio__nav">
+        <button class="portfolio__nav-item" onclick="scrollToSection('about')">About me</button>
+        <button class="portfolio__nav-item" onclick="scrollToSection('skills')">Skills</button>
+        <button class="portfolio__nav-item" onclick="scrollToSection('projects')">Projects</button>
+        <button class="portfolio__nav-item" onclick="scrollToSection('contact')">Contacts</button>
+      </nav>
+    </header>
+
+    <section class="about" id="about">
+      <div class="about__profile">
+        <img src="1.jpg" alt="profile" class="about__image">
+        <div class="about__info">
+          <h2 class="about__name">Sandara Park Tababan</h2>
+          <p class="about__description">
+            I am currently studying at St. Vincent de Ferrer College, pursuing a degree in BSIT. I enjoy solving Rubik's cubes and love working on creative projects. In my free time, I enjoy reading books and expanding my knowledge.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2 class="skills__title">SKILLS</h2>
+      <ul class="skills__list">
+        <li class="skills__item">
+          <a href="https://www.github.com/" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqj9Ii13d6hx5a9kyLnC5A8A96LDSaSZv_w&s" alt="Github icon" class="skills__icon">
+            <span class="skills__name">GitHub</span>
+          </a>
+        </li>
+        <li class="skills__item">
+          <a href="https://www.figma.com/" target="_blank">
+            <img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/figma_logo_icon_147289.png" alt="Figma icon" class="skills__icon">
+            <span class="skills__name">Figma</span>
+          </a>
+        </li>
+        <li class="skills__item">
+          <a href="https://www.w3schools.com/html/" target="_blank">
+            <img src="https://c4.wallpaperflare.com/wallpaper/453/129/282/html5-hyper-text-markup-language-html-wallpaper-thumb.jpg" alt="HTML icon" class="skills__icon">
+            <span class="skills__name">HTML</span>
+          </a>
+        </li>
+        <li class="skills__item">
+          <a href="https://www.w3schools.com/css/" target="_blank">
+            <img src="https://www.citypng.com/public/uploads/preview/png-css3-round-black-logo-icon-701751694969829dlsek5yub5.png" alt="CSS icon" class="skills__icon">
+            <span class="skills__name">CSS</span>
+          </a>
+        </li>
+        <li class="skills__item">
+          <a href="https://www.python.org/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Python_for_iOS_App_Icon.png?20120528195202" alt="Python icon" class="skills__icon">
+            <span class="skills__name">Python</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="projects__title">PROJECTS</h2>
+      <div class="projects__list">
+        <div class="projects__item">
+          <h3>Project #1: <br> Personal Portfolio</h3>
+          <a href="https://www.figma.com/design/B1M5TV3PIpPdQ1lsOx1ISE/SVFC?node-id=511-300&t=FEJyZh4rKigEVss2-1" target="__blank">
+            <img src="portfolio.png" alt="Personal Portfolio" class="projects__image">
+          </a>
+        </div>
+        <div class="projects__item">
+          <h3> Project #2: <br>School Website</h3>
+          <img src="school.jpg" alt="School Website" class="projects__image">
+        </div>
+        <div class="projects__item">
+          <h3>Project #3: <br> Business Website</h3>
+          <a href="https://www.figma.com/design/B1M5TV3PIpPdQ1lsOx1ISE/SVFC?node-id=511-300&t=FEJyZh4rKigEVss2-1" target="__blank">
+            <img src="business.png" alt="Business Website" class="projects__image">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="footer__icons">
+        <a href="https://www.instagram.com/notyour_.araa/" class="footer__icon-link">
+          <img src="https://i.pinimg.com/736x/e5/28/37/e52837dfa1021e99518f58c0ec6d68b4.jpg" alt="instagram" class="footer__icon">
+        </a>
+        <a href="https://github.com/dar4aaaaa" class="footer__icon-link">
+          <img src="https://i.pinimg.com/736x/63/de/54/63de5479e8eb4676570c49e2579cab01.jpg" alt="github" class="footer__icon">
+        </a>
+        <a href="https://medium.com/@tababan25" class="footer__icon-link">
+          <img src="https://miro.medium.com/v2/0*6deVNHV3lTRN20VL.png" alt="medium" class="footer__icon">
+        </a>
+        <a href="https://www.facebook.com/sandaraparktababan14" class="footer__icon-link">
+          <img src="https://i.pinimg.com/736x/d9/ce/5f/d9ce5fe97662c1f33b4fdf2ebdf6c3db.jpg" alt="facebook" class="footer__icon">
+        </a>
+      </div>
+      <div class="footer__text">
+        <p>Work | Story | Services | Careers | Contact Us</p>
+      </div>
+      
+
+<script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
